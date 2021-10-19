@@ -62,3 +62,56 @@ border: 1px solid #FCB72B;
 }
 }
 }
+
+@media only screen and (max-width:768px) {
+  .section2{
+  width: 768px;
+  margin: 0;
+  padding: 0;
+  height: 396px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 920px;
+    
+
+  
+&-img{
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 610px;
+  height: 445px;
+  }
+  &-child1{
+  width: 573px;
+  height: 304px;
+  margin: 64px 98px 120px 98px;
+
+
+  &-hed{
+    margin: 0;
+    padding: 0;
+    width: 445px;
+    height: 96px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #495567;
+    margin-bottom: 29px;
+    }
+    &-tex{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    margin-bottom: 40px;
+    }
+  }
+
+  }
+}

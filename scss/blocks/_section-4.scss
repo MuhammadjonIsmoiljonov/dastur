@@ -24,3 +24,34 @@ line-height: 48px;
 color: #FFFFFF;
 
 }
+
+@media only screen and (max-width:768px) {
+  .section4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding: 62px 156px 142px 155px;
+    width: 768px;
+    height: 396px;
+    margin: 0 auto;
+    background-image: url("..//../img/Mask-tab.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    }
+
+    .section4-hed{
+      margin: 0;
+      padding: 0;
+      width: 457px;
+      height: 96px;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 48px;
+      color: #FFFFFF;
+      
+      }
+
+}

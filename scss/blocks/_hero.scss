@@ -4,11 +4,11 @@
       margin: 0 auto;
       padding: 153px 775px 152px 165px;
       max-width: 1440px;
-      min-height: 628px;
+      min-height: 650px;
       background-image: url("../img/Bitmap-hero.png");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 1440px,650px;
+      background-size: contain;
       margin-bottom: 160px;
       
       &-hed{
@@ -32,18 +32,43 @@
             margin-bottom: 40px;
              
       }
+      &-box{
+           max-width: 538px;
+            height: 338px;
+            width: 100%;
+      }
       
-      // .hero-tex::before{
-            //       content: "salom";
-      //       // position: absolute;
-      //       display: inline-block;
-      //       width: 202px;
-      //       height: 0;     
-      //       background-image: url("../img/Path 3.png");
-      //       background-position: center;
-      //       background-repeat: no-repeat;
-      //       background-size: contain;
-      // }
+      .hero-box::before{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 202px;
+            height: 15px;   
+            margin: 0;
+            padding: 0;  
+            background-image: url("../img/Path 3.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: 35px;
+            top: 70%;
+      }
+
+      .hero-box::after{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 446px;
+            height: 140px;   
+            margin: 0;
+            padding: 0;  
+            background-image: url("../img/Group 8 Copy.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            right: 260px;
+            top: 70%;
+      }
 
       &-img{
             margin: 0;
@@ -85,4 +110,69 @@
       text-align: center;
 
      }
+}
+
+
+@media only screen and (max-width:768px) {
+      .hero{
+            // display: block;
+            max-width: 768px;
+            min-height: 650px;
+            // width: 100%;
+            margin: 0 auto;
+            margin-left: 100px;
+            padding: 137px 98px 217px 97px;
+            background-image: url("./../img/Bitmap_hero2.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            // background-size: 768px 650px;
+            background-size: contain;
+            margin: 0;
+            margin-bottom: 122px; 
+              
+            
+            &-box{
+            max-width: 573px;
+            height: 296px;
+      }
+
+      .hero-box::before{
+            display: none;
+      }
+      .hero-box::after{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 446px;
+            height: 140px;   
+            margin: 0;
+            padding: 0;  
+            background-image: url("../img/Group 8 Copy.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: -100px;
+            top: 550px;
+      }
+      
+            &-hed{
+                  margin: 0;
+                  padding: 0;
+                  margin-bottom: 24px;     
+            }
+
+            &-tex{
+                  margin: 0;
+                  padding: 0;
+                  position: relative;
+                  margin-bottom: 32px;
+                   
+            }
+            &-link{
+                 
+                  padding: 14px 39px; 
+                  margin-left: 200px;
+           }
+            
+      }
 }
